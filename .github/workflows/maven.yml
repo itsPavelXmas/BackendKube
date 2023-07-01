@@ -38,7 +38,7 @@ jobs:
     - name: Install Maven
       run: sudo apt-get update && sudo apt-get install -y maven
     - name: Start PostgreSQL service
-      run: docker run --name kubeDis -e POSTGRES_USER=disertatieUser -e POSTGRES_DB=disertatie -e POSTGRES_PASSWORD=1234 -p 5432:5432 -d postgres
+      run: sudo docker run --name kubeDis -e POSTGRES_USER=disertatieUser -e POSTGRES_DB=disertatie -e POSTGRES_PASSWORD=1234 -p 5432:5432 -d postgres
     - name: Run tests
       run: mvn test
       env:
