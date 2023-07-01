@@ -20,8 +20,8 @@ jobs:
     steps:
       - name: Hello
         run: echo "hello"
-      - name: Going in Folder
-        run: cd "actions-runner"
+#      - name: Going in Folder
+#        run: cd "actions-runner"
       - name: Listing
         run: ll
 #      - name: Install openjdk and Maven
