@@ -23,7 +23,7 @@ jobs:
 #      - name: Going in Folder
 #        run: cd "actions-runner"
       - name: Listing
-        run: ll
+        run: ls
 #      - name: Install openjdk and Maven
 #        run:
 #      - uses: actions/checkout@v3
