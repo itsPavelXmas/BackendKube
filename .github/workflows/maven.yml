@@ -39,7 +39,7 @@ jobs:
       run: sudo apt-get update && sudo apt-get install -y maven
     - name: Check if kubeDis container is running
       run: |
-        if docker inspect --format '{{.State.Running}}' kubeDis; then
+        if sudo docker inspect --format '{{.State.Running}}' kubeDis; then
           echo "kubeDis container is already running"
         else
           echo "Starting kubeDis container"
