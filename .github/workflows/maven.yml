@@ -20,8 +20,10 @@ jobs:
     steps:
       - name: Hello
         run: echo "hello"
-      - name: Find Dir
-        run: pwd
+      - name: Going in Folder
+        run: cd "actions-runner"
+      - name: Listing
+        run: ll
 #      - name: Install openjdk and Maven
 #        run:
 #      - uses: actions/checkout@v3
