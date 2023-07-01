@@ -63,7 +63,7 @@ public class ArchiveResourceTest {
 
 
     @Test
-    public void testGetAllCoursesForCurrentUser() {
+    public void testGenerateKubernetesCompoenents() {
         var infra = new InfrastructureDTO();
         var configmap = new ConfigMapDto("ConfigMap",TEXT);
         infra.setConfigMap(configmap);
